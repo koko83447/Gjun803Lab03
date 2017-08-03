@@ -8,59 +8,150 @@
     tools:context="com.example.android.lab03_courtcounter.MainActivity">
 
     <LinearLayout
-        android:id="@+id/scoresT"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_centerHorizontal="true">
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:text="黃蜂" />
+
+            <TextView
+                android:id="@+id/scores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="60sp"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scores"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:background="?attr/colorPrimary"
+                android:onClick="threeP"
+                android:text="+3分球"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/three"
+                android:layout_marginBottom="25dp"
+                android:layout_weight="1"
+                android:background="?attr/colorPrimary"
+                android:onClick="twoP"
+                android:text="+2分球"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/two"
+                android:layout_weight="1"
+                android:background="?attr/colorPrimary"
+                android:onClick="oneP"
+                android:text="罰球"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+
 
         <TextView
-            android:id="@+id/scores"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="0"
-            android:textAlignment="textStart"
-            android:textSize="60sp"
-            android:paddingRight="60dp"/>
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_dark"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/asd"/>
 
-        <TextView
-            android:id="@+id/scores2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="0"
-            android:textAlignment="textStart"
-            android:textSize="60sp" />
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:text="火箭" />
+
+            <TextView
+                android:id="@+id/scores2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="60sp"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/three2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scores2"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:background="?attr/colorPrimary"
+                android:onClick="threeP2"
+                android:text="+3分球"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/two2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/three2"
+                android:layout_marginBottom="25dp"
+                android:layout_weight="1"
+                android:background="?attr/colorPrimary"
+                android:onClick="twoP2"
+                android:text="+2分球"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/one2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/two2"
+                android:layout_weight="1"
+                android:background="?attr/colorPrimary"
+                android:onClick="oneP2"
+                android:text="罰球"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
     </LinearLayout>
-
-    <Button
-        android:id="@+id/three"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/scoresT"
-        android:layout_marginBottom="16dp"
-        android:layout_marginTop="25dp"
-        android:onClick="threeP"
-        android:text="+3分球" />
-
-    <Button
-        android:id="@+id/two"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/three"
-        android:layout_marginBottom="16dp"
-        android:onClick="twoP"
-        android:text="+2分球" />
-
-    <Button
-        android:id="@+id/one"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/two"
-        android:onClick="oneP"
-        android:text="罰球" />
 
     <Button
         android:id="@+id/res"
@@ -68,7 +159,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:background="?attr/colorPrimary"
         android:onClick="resP"
-        android:text="重置" />
+        android:text="重置"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
 
 </RelativeLayout>
