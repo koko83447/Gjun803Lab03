@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/android/Lab03_CourtCounter/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="30957091caa40e5b9b225bec786b37cb9a639a6d">
+        <dex dex="/Users/android/Lab03_CourtCounter/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_192ba3763bedf70b3d333a93ba4a0bb6ba2e5d5f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/android/Lab03_CourtCounter/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/android/Lab03_CourtCounter/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_543cbfe856276b1485627da57c18e3217eefdd81/classes.dex" />
+    </item>
+
+</items>
